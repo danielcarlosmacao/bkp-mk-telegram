@@ -3,7 +3,7 @@ unzip bkp-mk-telegram.zip
 sleep 1 # Delay 
 
 # Caminho do diretório que você deseja verificar/criar
-diretorio="/root/script"
+diretorio="/root/scripts"
 
 # Verificar se o diretório existe
 if [ ! -d "$diretorio" ]; then
