@@ -44,7 +44,7 @@ else
 fi
 
 
-mv bckptelegram.sh /root/script/
+mv bckptelegram.sh /root/scripts/
 sleep 1  # Delay 
 
 echo "Por favor, insira o Token do Telegram:"
