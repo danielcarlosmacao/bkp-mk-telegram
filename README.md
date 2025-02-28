@@ -4,7 +4,7 @@
 Baixe e extraia os arquivo
 
 ```sh
-curl -LO https://github.com/danielcarlosmacao/bkp-mk-telegram/archive/refs/heads/main.zip
+cd /root; curl -LO https://github.com/danielcarlosmacao/bkp-mk-telegram/archive/refs/heads/main.zip
 ```
 Extraia o arquivo
 
