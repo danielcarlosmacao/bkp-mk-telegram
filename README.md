@@ -31,13 +31,21 @@ sh script.sh
 Conseguir Token e o id do grupo
 
 1.Procurar por BotFather dentro do Telegram
+
 2.Adicionar um novo bot (/newbot)
+
 3.Escolher um nome para o bot
+
 4.Escolher um login para o bot (obrigatorio terminar com bot)
+
 5.Anotar o Token
+
 6.Verificar se o token está funcionando com a URL de Atualizações.
+
 7.Adicionar o bot ao grupo usado o @login
+
 8.Pegar o ID do grupo com a URL de Atualizações.
+
 9.Fazer teste de envio com URL de envio.
 
 nos links abaixo troque SEUTOKEN e SEUGRUPO
