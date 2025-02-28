@@ -62,4 +62,4 @@ read Identificacao
 sed -i "s/^Identificacao=.*/Identificacao=\"$Identificacao\"/"  /root/script/bckptelegram.sh
 
 echo "Concluido!!!. Por padrao o backup via telegram e enviado as 04:10 caso queira alterar esse horario va em etc/cron.d/wf"
-exit 0
+then
