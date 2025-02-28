@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 unzip bkp-mk-telegram.zip
 sleep 1 # Delay 
 
