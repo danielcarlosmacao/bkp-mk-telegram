@@ -16,6 +16,10 @@ va ao diretorio
 ```sh
 cd bkp-mk-telegram-main
 ```
+De as permiçoes
+```sh
+chmod +x script.sh; sed -i 's/\r//' script.sh
+```
 Execute o script
 
 ```sh
