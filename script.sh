@@ -3,7 +3,7 @@ unzip bkp-mk-telegram.zip
 sleep 1 # Delay 
 
 # Caminho do diretório que você deseja verificar/criar
-diretorio="/root/scripts"
+diretorio="/root/script"
 
 # Verificar se o diretório existe
 if [ ! -d "$diretorio" ]; then
@@ -27,7 +27,7 @@ else
 fi
 
 
-texto="10 04   * * *   root    /root/scripts/bckptelegram.sh >/dev/null 2>&1"
+texto="10 04   * * *   root    /root/script/bckptelegram.sh >/dev/null 2>&1"
 
 # Verificar se o texto já existe no arquivo
 if grep -qF "$texto" "$arquivo"; then
@@ -44,22 +44,22 @@ else
 fi
 
 
-mv bckptelegram.sh /root/scripts/
+mv bckptelegram.sh /root/script/
 sleep 1  # Delay 
 
 echo "Por favor, insira o Token do Telegram:"
 read Token
-sed -i "s/^Token=.*/Token=\"$Token\"/"  /root/scripts/bckptelegram.sh
+sed -i "s/^Token=.*/Token=\"$Token\"/"  /root/script/bckptelegram.sh
 
 echo "Por favor, insira o ChatID do Telegram:"
 read ChatID
-sed -i "s/^ChatID=.*/ChatID=\"$ChatID\"/"  /root/scripts/bckptelegram.sh
+sed -i "s/^ChatID=.*/ChatID=\"$ChatID\"/"  /root/script/bckptelegram.sh
 
-echo "Por padrao o diretorio de backup do sistema e /opt/mk-auth/bckp caso nao seja seu caso alterer a variavel DirArqBkp em /root/scripts/bcptelegram.sh "
+echo "Por padrao o diretorio de backup do sistema e /opt/mk-auth/bckp caso nao seja seu caso alterer a variavel DirArqBkp em /root/script/bcptelegram.sh "
 
 echo "Por favor, insira uma identificação para ir junto com o backup para o telegram:"
 read Identificacao
-sed -i "s/^Identificacao=.*/Identificacao=\"$Identificacao\"/"  /root/scripts/bckptelegram.sh
+sed -i "s/^Identificacao=.*/Identificacao=\"$Identificacao\"/"  /root/script/bckptelegram.sh
 
 echo "Concluido!!!. Por padrao o backup via telegram e enviado as 04:10 caso queira alterar esse horario va em etc/cron.d/wf"
 exit 0
